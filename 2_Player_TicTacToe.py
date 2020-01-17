@@ -1,3 +1,6 @@
+# Use the following keys to play the game:
+# q, w, e, a, s, d, z, x, c.
+
 import numpy as np
 import keyboard
 from tkinter import *
