@@ -87,7 +87,6 @@ def player_0():
                 break
 
 
-
 def player_1():
     player_0s_turn = False
     is_end_turn = False
