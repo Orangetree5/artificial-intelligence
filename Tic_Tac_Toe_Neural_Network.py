@@ -333,11 +333,24 @@ def neural_network_versus_human():
 
 
 def main():
-    for iterate in range(number_of_iterations):
-        evaluate_scores()
-        new_set_of_neural_networks()
+    try:
+        for iterate in range(number_of_iterations):
+            evaluate_scores()
+            new_set_of_neural_networks()
 
-        print(100*(iterate/number_of_iterations), '%')
+            print(100*(iterate/number_of_iterations), '%')
+    except Exception as ex:
+        print("Exceptio: {}".format(ex))
+        scores = np.array([neural_network[0].score])
+
+        for index0 in range(1, int(number_of_networks)):
+            scores = np.insert(scores, index0, neural_network[index0].score)
+
+        scores = np.argsort(scores)
+
+        print('\nWeights: ', '\n\n', neural_network[scores[number_of_networks - 1]].weights, '\n\nbias: \n\n',
+              neural_network[scores[number_of_networks - 1]].bias)
+
 
     scores = np.array([neural_network[0].score])
 
