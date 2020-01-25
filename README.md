@@ -12,7 +12,8 @@
 - [x] Xor gate K.I. Programm emplimentieren.
 - [x] pytest zum laufen kriegen.
 - [ ] Text "Noahs Lernmodel" fertigstellen
-- [ ] Erklärung zu "Neuronale Netzwerke" outline
+  - [-] Formeln besser leslich machen
+- [x] Erklärung zu "Neuronale Netzwerke" outline
 - [ ] Codereview von Tic Tac Toe mit Mat
 - [ ] logfile fertigstellen
 - [ ] Erklärung zu "Neuronale Netzwerke" fertigstellen
