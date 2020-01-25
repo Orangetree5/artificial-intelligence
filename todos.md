@@ -1,0 +1,5 @@
+- [ ] Text "Noahs Lernmodel" fertigstellen
+- [ ] Erklärung zu "Neuronale Netzwerke" outline
+- [ ] Codereview von Tic Tac Toe mit Mat
+- [ ] logfile fertigstellen
+- [ ] Erklärung zu "Neuronale Netzwerke" fertigstellen
