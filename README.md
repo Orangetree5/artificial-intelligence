@@ -67,50 +67,34 @@ In dieser Zeitspanne begann und beendete ich ein mein Tic Tac Toe neuronales Net
 In den letzten 2 Tagen machte ich "Bugfixes" an meinem neuralen Netzwerk. Mit hilfe einer der Mitarbeiter wurde mein neuronales Netzwerk dann anschließend zum Tic Tac Toe üben, auf einem Server deponiert, wo es ungestört eine Woche lang trainieren wird.
 
 ## Einige meiner recherchierten Links.
-https://www.youtube.com/watch?v=GB9ByFAIAH4
-numpy tutorial.
+https://www.youtube.com/watch?v=GB9ByFAIAH4 : Ein Numpy Lernvideo.
 
-https://www.youtube.com/watch?v=CliW7kSxxWU
-what are tensors.
+https://www.youtube.com/watch?v=CliW7kSxxWU : Was sind Tensoren.
 
-https://www.youtube.com/watch?v=f5liqUk0ZTw&t=7s
-explains what tensors are.
+https://www.youtube.com/watch?v=f5liqUk0ZTw&t=7s : Erlärt was Tensoren sind.
 
-https://en.wikipedia.org/wiki/Tensor
-tensors.
+https://en.wikipedia.org/wiki/Tensor : Tensoren.
 
-https://www.youtube.com/watch?v=oJNHXPs0XDk
-Neural Network Architectures.
+https://www.youtube.com/watch?v=oJNHXPs0XDk : neuronale Netzwerke: Topologische Architekturen.
 
-https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=2&t=0s
-Neural Networks 3B1B I
+https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=2&t=0s : Neural networks: Deep learning, chapter 1 (3Blue1Brown).
 
-https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3&t=0s
-Neural Networks 3B1B II
+https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3&t=0s : Neural networks: Deep learning, chapter 2 (3Blue1Brown).
 
-https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=4&t=1s
-Neural Networks 3B1B III
+https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=4&t=1s : Neural networks: Deep learning, chapter 3 (3Blue1Brown).
 
-https://www.youtube.com/watch?v=tIeHLnjs5U8&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5&t=0s
-Neural Networks 3B1B IIII
+https://www.youtube.com/watch?v=tIeHLnjs5U8&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5&t=0s : Neural networks: Deep learning, chapter 4 (3Blue1Brown).
 
-https://www.youtube.com/watch?v=K-wIZuAA3EY
-A.I. Learns To Walk.
+https://www.youtube.com/watch?v=K-wIZuAA3EY : Eine K.I. erlernt das Gehen.
 
-https://www.youtube.com/watch?v=kvo1B7r7Xtk
-Induction Bias.
+https://www.youtube.com/watch?v=kvo1B7r7Xtk : Induktions Urteil.
 
-https://www.youtube.com/watch?v=ZDa-Z5JzLYM&t=62s
-Python OOP Tutorial 1: Classes and Instances.
+https://www.youtube.com/watch?v=ZDa-Z5JzLYM&t=62s : Python OOP Tutorial 1: Classes and Instances.
 
-https://en.wikipedia.org/wiki/Types_of_artificial_neural_networks#Probabilistic
-Types of artificial neural networks.
+https://en.wikipedia.org/wiki/Types_of_artificial_neural_networks#Probabilistic : Unterschiedliche Sorten des neuronalen Netzwerks.
 
-https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
-Rectifier (neural networks).
+https://en.wikipedia.org/wiki/Rectifier_(neural_networks) : Rectifier (neuronale Netzworke).
 
-https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
-Erklaerte Topologien fuer Neuronale Netzwerke.
+https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464 : Erklärte Topologien für Neuronale Netzwerke.
 
-https://www.youtube.com/watch?v=QVdf0LgmICw
-Python variable scopes.
+https://www.youtube.com/watch?v=QVdf0LgmICw : Python: "variable scopes".
