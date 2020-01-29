@@ -39,7 +39,7 @@ Das “Xor Gate Neuronales Netzwerk” fertig programmiert, aber es funktioniert
 Abends bei dem “Open Tech School AI Meetup” habe ich einige neue “Numpy” Funktionen kennengelernt.
 
 10.01.2020:
-Ich habe über neuronale Netzwerke gelernt und “Bugfixes” an dem “Xor Gate” Programm durchgeführt aber es funktioniert immer noch nicht. Ich bin zur Erkenntnis gelangt das die Fehler meines Programmes schwer zu finden sein würden da ich “unordentlich” programmiert habe.
+Ich habe über neuronale Netzwerke gelernt und “Bugfixes” an dem “Xor Gate” Programm durchgeführt aber es funktioniert immer noch nicht. Ich bin zur Erkenntnis gelangt das die Fehler meines Programmes schwer zu finden sein werden da ich “unordentlich” programmiert habe.
 
 11.01.2020:
 Pause.
