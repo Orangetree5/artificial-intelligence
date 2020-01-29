@@ -91,7 +91,7 @@ https://www.youtube.com/watch?v=kvo1B7r7Xtk : Induktions Urteil.
 
 https://www.youtube.com/watch?v=ZDa-Z5JzLYM&t=62s : Python OOP Tutorial 1: Classes and Instances.
 
-https://en.wikipedia.org/wiki/Types_of_artificial_neural_networks#Probabilistic : Unterschiedliche Sorten des neuronalen Netzwerks.
+https://en.wikipedia.org/wiki/Types_of_artificial_neural_networks : Unterschiedliche Sorten des neuronalen Netzwerks.
 
 https://en.wikipedia.org/wiki/Rectifier_(neural_networks) : Rectifier (neuronale Netzworke).
 
