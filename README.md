@@ -7,13 +7,19 @@
 - [ ] Kennenlernen der Pythonbibliotheken:
   - [ ] matplot
   - [x] numpy
-  - [ ] keras
-  - [ ] TensorFlow ect.
+  - [-] keras
+  - [-] TensorFlow etc.
 - [x] Xor gate K.I. Programm emplimentieren.
 - [x] pytest zum laufen kriegen.
+- [ ] Text "Noahs Lernmodel" fertigstellen
+  - [-] Formeln besser leslich machen
+- [x] Erklärung zu "Neuronale Netzwerke" outline
+- [ ] Codereview von Tic Tac Toe mit Mat
+- [ ] logfile fertigstellen
+- [ ] Erklärung zu "Neuronale Netzwerke" fertigstellen
 
 ## Lang-Zeit-Aufgaben.
-- TicTacToe K.I. Programmieren.
+- [x] TicTacToe K.I. Programmieren.
 
 ## LOG.
 06.01.2020:
