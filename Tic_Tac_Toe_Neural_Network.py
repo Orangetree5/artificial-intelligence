@@ -5,7 +5,7 @@ radius_of_random_generation = 5
 learning_rate = 0.1
 score_adaptivity = 20 ** -1  # the difference between the networks rate of change when its score is high and when its
 # low
-number_of_iterations = 101
+number_of_iterations = 100
 number_of_networks = 25
 ratio_of_reset_networks = 2/5  # the ratio between the neural networks that are reset every round and the that aren't
 flip_turn = False  # whether the network starts when you play it
@@ -19,7 +19,7 @@ class NeuralNetwork:
         self.layers = np.array([[0, 0, 0, 0, 0, 0, 0, 0, 0],
                                 [0, 0, 0, 0, 0, 0, 0, 0, 0],
                                 [0, 0, 0, 0, 0, 0, 0, 0, 0],
-                                [0, 0, 0, 0, 0, 0, 0, 0, 0]])
+                                [0, 0, 0, 0, 0, 0, 0, 0, 0]], dtype='float64')
         self.bias = 2*(np.random.rand(3, 9) - 0.5)
         self.weights = 2*(np.random.rand(3, 9, 9) - 0.5)
         self.score = 0
@@ -30,8 +30,7 @@ class NeuralNetwork:
 
     def forward_prop(self):
         for index0 in range(1, 4):
-            for index1 in range(9):
-                self.layers[index0][index1] = self.bias[index0 - 1][index1]
+            self.layers[index0] = self.bias[index0 - 1]
 
         for index0 in range(1, 4):
             for index1 in range(9):
@@ -333,11 +332,24 @@ def neural_network_versus_human():
 
 
 def main():
-    for iterate in range(number_of_iterations):
-        evaluate_scores()
-        new_set_of_neural_networks()
+    try:
+        for iterate in range(number_of_iterations):
+            evaluate_scores()
+            new_set_of_neural_networks()
 
-        print(100*(iterate/number_of_iterations), '%')
+            print(100*(iterate/number_of_iterations), '%')
+    except Exception as ex:
+        print("Exception: {}".format(ex))
+        scores = np.array([neural_network[0].score])
+
+        for index0 in range(1, int(number_of_networks)):
+            scores = np.insert(scores, index0, neural_network[index0].score)
+
+        scores = np.argsort(scores)
+
+        print('\nWeights: ', '\n\n', neural_network[scores[number_of_networks - 1]].weights, '\n\nbias: \n\n',
+              neural_network[scores[number_of_networks - 1]].bias)
+
 
     scores = np.array([neural_network[0].score])
 

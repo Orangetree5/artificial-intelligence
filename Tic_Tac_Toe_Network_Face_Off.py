@@ -9,7 +9,7 @@ class NeuralNetwork:
         self.layers = np.array([[0, 0, 0, 0, 0, 0, 0, 0, 0],
                                 [0, 0, 0, 0, 0, 0, 0, 0, 0],
                                 [0, 0, 0, 0, 0, 0, 0, 0, 0],
-                                [0, 0, 0, 0, 0, 0, 0, 0, 0]])
+                                [0, 0, 0, 0, 0, 0, 0, 0, 0]], dtype='float64')
         self.bias = 2*(np.random.rand(3, 9) - 0.5)
         self.weights = 2*(np.random.rand(3, 9, 9) - 0.5)
         self.score = 0
@@ -19,7 +19,6 @@ class NeuralNetwork:
         return output
 
     def forward_prop(self):
-        print(self.weights)
         for index0 in range(1, 4):
             for index1 in range(9):
                 self.layers[index0][index1] = self.bias[index0 - 1][index1]
@@ -239,10 +238,12 @@ def versus():
 
 
 def main():
-    for iterate in range(100):
+    for iterate in range(1000):
         versus()
 
-    print('The Neural Networks Score: ', neural_network.score, '\n\n', '"Randoms" score: ', randoms_score)
+    print('The Neural Networks Score: ', neural_network.score, '\n\n', '"Randoms" score: ', randoms_score,
+          '\n\n', 'win difference between players: ', neural_network.score - randoms_score,
+          '\n\n', 'Ratio: ', neural_network.score/randoms_score)
 
 
 if __name__ == "__main__":
