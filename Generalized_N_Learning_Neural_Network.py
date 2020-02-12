@@ -46,7 +46,7 @@ def set_variables():  # sets the necessary variables in accordance with the user
 def magnitude(arbitrary_array):  # this method computes the magnitude of any array given as an input
     magnitude_of_arbitrary_array = np.array([], dtype='float')
 
-    for index0 in range(arbitrary_array.size):
+    for index0 in range(arbitrary_array.shape[0]):
         magnitude_of_arbitrary_array = np.insert(magnitude_of_arbitrary_array, index0, np.sum(arbitrary_array[index0] \
                                                                                               ** 2))
 
