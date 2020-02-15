@@ -46,7 +46,7 @@ def set_variables():  # sets the necessary variables in accordance with the user
 def magnitude(arbitrary_array):  # this method computes the magnitude of any array given as an input
     magnitude_of_arbitrary_array = np.array([], dtype='float')
 
-    for index0 in range(arbitrary_array.size):
+    for index0 in range(arbitrary_array.shape[0]):
         magnitude_of_arbitrary_array = np.insert(magnitude_of_arbitrary_array, index0, np.sum(arbitrary_array[index0] \
                                                                                               ** 2))
 
@@ -232,9 +232,41 @@ class NeuralNetworkCoordinator:
                                                self.neural_network[index0].eta() * change_in_bias
 
 
+class HumanInterface:
+    """
+    This class handles the human interface: All Is Modifiable
+    """
+    def __init__(self):
+        self.best_neural_network = 0
+        self.task = 0
+
+    def set_variables(self, neural_network_coordinator):
+        self.best_neural_network = neural_network_coordinator.neural_network[neural_network_coordinator.score_order[amount_of_neural_networks - 1]]
+        self.task = Task()
+
+    def print_weight_and_bias_arrays(self):
+        print('weights:')
+        print(self.best_neural_network.weights)
+        print('')
+        print('bias:')
+        print(self.best_neural_network.bias)
+        print('')
+
+    def print_results(self):
+        for index0 in range(self.task.input.shape[0]):
+            print('For input: ', self.task.input[index0])
+            print('Expected output: ', self.task.output[index0])
+            self.best_neural_network.layers[0] = self.task.input[index0]
+            self.best_neural_network.propagation()
+            output = round(self.best_neural_network.layers[amount_of_layers - 1][0])
+            print('Neural Network output: ', output)
+            print('')
+
+
 def main():  # the center of coordination
     set_variables()
     neural_network_coordinator = NeuralNetworkCoordinator()
+    human_interface = HumanInterface()
 
     for iteration in range(amount_of_iterations):  # trains the networks
         neural_network_coordinator.evaluate_score()
@@ -242,25 +274,9 @@ def main():  # the center of coordination
 
         print(iteration)
 
-    print("weights:")  # prints the best networks weight values
-    print(neural_network_coordinator.neural_network[neural_network_coordinator.score_order[amount_of_neural_networks \
-                                                                                           - 1]].weights)
-    print("bias:")  # prints the best networks bias values
-    print(neural_network_coordinator.neural_network[neural_network_coordinator.score_order[amount_of_neural_networks \
-                                                                                           - 1]].bias)
-    inputs = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-
-    for index0 in range(4):
-        print('')
-
-        neural_network_coordinator.neural_network[neural_network_coordinator.score_order[amount_of_neural_networks - 1 \
-            ]].layers[0] = inputs[index0]
-        neural_network_coordinator.neural_network[neural_network_coordinator.score_order[amount_of_neural_networks - 1 \
-            ]].propagation()
-
-        print(inputs[index0], ':')
-        print(round(neural_network_coordinator.neural_network[neural_network_coordinator.score_order[ \
-            amount_of_neural_networks - 1]].layers[amount_of_layers - 1][0]))
+    human_interface.set_variables(neural_network_coordinator)
+    human_interface.print_weight_and_bias_arrays()
+    human_interface.print_results()
 
 
 if __name__ == "__main__":
